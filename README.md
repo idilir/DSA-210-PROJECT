@@ -1,6 +1,6 @@
 # DSA-210-PROJECT
 Coffee Sales and Weather Analysis
-# 3DSA 210: Data Science Term Project  
+
 **Title**: Analyzing the Impact of Weather on Coffee Sales  
 
 ## Motivation  
@@ -17,3 +17,30 @@ Coffee shops often experience fluctuating sales due to weather conditions. This 
    - **Variables**: Daily sales ($), number of customers, date.  
    - **Enrichment**: Merged with weather data to analyze correlations.  
 
+
+---
+
+## Hypothesis Questions  
+1. **Primary Hypothesis**:  
+   - *Does temperature significantly influence daily coffee sales?*  
+     - **Null Hypothesis (H₀)**: Temperature has no significant effect on coffee sales.  
+     - **Alternative Hypothesis (H₁)**: Temperature significantly affects coffee sales.  
+
+2. **Secondary Hypothesis**:  
+   - *Does rainfall significantly influence daily coffee sales?*  
+     - **Null Hypothesis (H₀)**: Rainfall has no significant effect on coffee sales.  
+     - **Alternative Hypothesis (H₁)**: Rainfall significantly affects coffee sales.  
+
+3. **Tertiary Hypothesis**:  
+   - *Is there an interaction effect between temperature and rainfall on coffee sales?*  
+     - **Null Hypothesis (H₀)**: There is no interaction effect between temperature and rainfall on coffee sales.  
+     - **Alternative Hypothesis (H₁)**: There is a significant interaction effect between temperature and rainfall on coffee sales.  
+
+---
+
+## Expected Insights  
+- Identify whether colder or warmer temperatures drive higher coffee sales.  
+- Determine if rainy days lead to increased or decreased sales.  
+- Provide actionable recommendations for inventory and staffing based on weather forecasts.  
+
+---
