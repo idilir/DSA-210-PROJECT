@@ -4,7 +4,7 @@ Coffee Sales and Weather Analysis
 **Title**: Analyzing the Impact of Weather on Coffee Sales  
 
 ## Motivation  
-Coffee shops often experience fluctuating sales due to weather conditions. This project explores how **temperature** and **rainfall** influence daily coffee sales at a fictional café. The goal is to help small businesses optimize inventory and staffing based on weather forecasts.  
+Coffee shops often experience fluctuating sales due to weather conditions. This project explores how **temperature** and **rainfall** influence daily coffee sales at a café. The goal is to help small businesses optimize inventory and staffing based on weather forecasts.  
 
 ## Data Sources  
 1. **Weather Data**  
