@@ -15,32 +15,48 @@ Coffee shops often experience fluctuating sales due to weather conditions. This 
 2. **Coffee Sales Data**  
    - **Source**: [Kaggle Coffee Sales Dataset](https://www.kaggle.com/datasets/ahmedabbas757/coffee-sales) (simulated data).  
    - **Variables**: Daily sales ($), number of customers, date,location ,coffee tea preference.  
-   - **Enrichment**: Merged with weather data to analyze correlations.  
+   - **Enrichment**: Merged with weather data to analyze correlations.
+  
+     
+##  Objectives  
+- Analyze correlations between weather (temperature, rainfall) and coffee sales.  
+- Identify patterns in coffee vs. tea preferences based on weather.  
+- Assess location-specific sales trends and time-of-day purchasing habits.  
+- Develop predictive insights for inventory and staffing optimization.  
 
 
----
-
-## Hypothesis Questions  
-1. **Primary Hypothesis**:  
-   - *Does temperature significantly influence daily coffe preference and sales?*  
-     - **Null Hypothesis (H₀)**: Temperature has no significant effect on coffe preference and sales.  
-     - **Alternative Hypothesis (H₁)**: Temperature significantly affects coffe preference and sales.  
-
-2. **Secondary Hypothesis**:  
-   - *Does rainfall significantly influence daily coffee preference and sales?*  
-     - **Null Hypothesis (H₀)**: Rainfall has no significant effect on coffee preference.  
-     - **Alternative Hypothesis (H₁)**: Rainfall significantly affects coffee preference.  
-
-3. **Tertiary Hypothesis**:  
-   - *Is there an interaction effect between temperature and rainfall on coffe preference and sales?*  
-     - **Null Hypothesis (H₀)**: There is no interaction effect between temperature and rainfall on coffe preference and sales.  
-     - **Alternative Hypothesis (H₁)**: There is a significant interaction effect between temperature and rainfall on coffe preference and sales.  
 
 ---
 
-## Expected Insights  
-- Identify whether colder or warmer temperatures drive higher coffee sales.  
-- Determine if rainy days lead to increased or decreased sales.  
-- Provide actionable recommendations for inventory and staffing based on weather forecasts.  
+## 🔬 Hypothesis Analysis  
+
+### Temperature vs. Coffee Sales  
+- **H₀**: Temperature has no effect on coffee preference/sales.  
+- **H₁**: Temperature significantly affects coffee preference/sales.  
+
+###  Rainfall vs. Coffee Sales  
+- **H₀**: Rainfall has no effect on coffee preference.  
+- **H₁**: Rainfall significantly affects coffee preference.  
+
+### Temperature-Rainfall Interaction  
+- **H₀**: No interaction effect between temperature and rainfall.  
+- **H₁**: Significant interaction effect exists.  
+
+### Location-Based Preferences  
+- **H₀**: No variation in coffee preference by location.  
+- **H₁**: Coffee preference varies significantly by location.  
+
+### Quinary Hypothesis**: Time-of-Day Influence  
+- **H₀**: Time of day has no impact on sales/preference.  
+- **H₁**: Time of day significantly influences sales/preference.  
+
+
+## 📊 Expected Insights  
+1. Correlation between colder temperatures and higher coffee sales.  
+2. Impact of rainy days on beverage preferences.  
+3. Interaction effects of weather on peak sales periods.  
+4. Location-specific trends (e.g., business vs. residential areas).  
+5. Time-of-day sales patterns (morning coffee vs. evening tea).  
 
 ---
+
