@@ -14,7 +14,7 @@ Coffee shops often experience fluctuating sales due to weather conditions. This 
 
 2. **Coffee Sales Data**  
    - **Source**: [Kaggle Coffee Sales Dataset](https://www.kaggle.com/datasets/ahmedabbas757/coffee-sales) (simulated data).  
-   - **Variables**: Daily sales ($), number of customers, date.  
+   - **Variables**: Daily sales ($), number of customers, date,location ,coffee tea preference.  
    - **Enrichment**: Merged with weather data to analyze correlations.  
 
 
@@ -22,19 +22,19 @@ Coffee shops often experience fluctuating sales due to weather conditions. This 
 
 ## Hypothesis Questions  
 1. **Primary Hypothesis**:  
-   - *Does temperature significantly influence daily coffee sales?*  
-     - **Null Hypothesis (H₀)**: Temperature has no significant effect on coffee sales.  
-     - **Alternative Hypothesis (H₁)**: Temperature significantly affects coffee sales.  
+   - *Does temperature significantly influence daily coffe preference and sales?*  
+     - **Null Hypothesis (H₀)**: Temperature has no significant effect on coffe preference and sales.  
+     - **Alternative Hypothesis (H₁)**: Temperature significantly affects coffe preference and sales.  
 
 2. **Secondary Hypothesis**:  
-   - *Does rainfall significantly influence daily coffee sales?*  
-     - **Null Hypothesis (H₀)**: Rainfall has no significant effect on coffee sales.  
-     - **Alternative Hypothesis (H₁)**: Rainfall significantly affects coffee sales.  
+   - *Does rainfall significantly influence daily coffee preference and sales?*  
+     - **Null Hypothesis (H₀)**: Rainfall has no significant effect on coffee preference.  
+     - **Alternative Hypothesis (H₁)**: Rainfall significantly affects coffee preference.  
 
 3. **Tertiary Hypothesis**:  
-   - *Is there an interaction effect between temperature and rainfall on coffee sales?*  
-     - **Null Hypothesis (H₀)**: There is no interaction effect between temperature and rainfall on coffee sales.  
-     - **Alternative Hypothesis (H₁)**: There is a significant interaction effect between temperature and rainfall on coffee sales.  
+   - *Is there an interaction effect between temperature and rainfall on coffe preference and sales?*  
+     - **Null Hypothesis (H₀)**: There is no interaction effect between temperature and rainfall on coffe preference and sales.  
+     - **Alternative Hypothesis (H₁)**: There is a significant interaction effect between temperature and rainfall on coffe preference and sales.  
 
 ---
 
