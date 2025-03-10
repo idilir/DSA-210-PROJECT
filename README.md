@@ -1,5 +1,5 @@
 # DSA-210-PROJECT
-Coffee Sales and Weather Analysis
+Coffee Preference,Sales and Weather Analysis
 
 **Title**: Analyzing the Impact of Weather on Coffee Sales  
 
