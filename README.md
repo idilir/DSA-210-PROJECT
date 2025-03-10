@@ -28,7 +28,7 @@ Coffee shops often experience fluctuating sales due to weather conditions. This 
 
 ---
 
-## 🔬 Hypothesis Analysis  
+## Hypothesis   
 
 ### Temperature vs. Coffee Sales  
 - **H₀**: Temperature has no effect on coffee preference/sales.  
