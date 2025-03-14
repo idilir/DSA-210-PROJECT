@@ -8,7 +8,7 @@ Coffee shops often experience fluctuating sales due to weather conditions. This 
 
 ## Data Sources  
 1. **Weather Data**  
-   - **Source**: [NOAA Climate Data](https://www.ncdc.noaa.gov/cdo-web/)  
+   - **Source**: [https://www.ncei.noaa.gov/access/past-weather/)  
    - **Variables**: Daily temperature (°C), rainfall (mm), and date for New York City (Jan–Mar 2023).  
    - **Collection**: Downloaded directly from NOAA’s public database.  
 
