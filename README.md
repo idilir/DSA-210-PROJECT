@@ -57,7 +57,8 @@ Coffee shops often experience fluctuating sales due to weather conditions. This 
 ## 📈 Visual Insights and Commentary
 
 ### 1. Average Unit Price by Time of Day
-![avg_price_time](avg_price_time.png)  
+  ![Unknown](https://github.com/user-attachments/assets/1c41fdb3-e4f5-49ff-8e2b-bf3032191c8c)
+
 **Insight**: Higher prices in the morning suggest demand for premium beverages early in the day.
 
 ### 2. Coffee vs Tea Preference Over Time of Day
