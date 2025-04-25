@@ -82,16 +82,6 @@ Coffee shops often experience fluctuating sales due to weather conditions. This 
 
 **Insight**: Sales negatively correlate with temperature (-0.56), suggesting more sales in colder weather.
 
-### 6. Coffee Sales by Location
-![Unknown-4](https://github.com/user-attachments/assets/112d32d4-e5b0-44dd-9938-f3f4b5473e28)
-
-**Insight**: Hell’s Kitchen and Astoria lead sales, pointing to strong local demand.
-
-### 7. Weekly Coffee Sales Trend
-![Unknown-13](https://github.com/user-attachments/assets/508176d9-d3da-4734-9fb4-2200d9bbe59a)
-
-**Insight**: Clear peak around week 25, followed by drop-off—seasonal or promotional effect likely.
-
 ### 8. Coffee Sales vs Temperature (Detailed)
 ![Unknown-5](https://github.com/user-attachments/assets/efd2fa29-d277-4bc2-be7b-05a3127ef993)
 
