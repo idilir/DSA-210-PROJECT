@@ -44,13 +44,14 @@ Coffee shops often experience fluctuating sales due to weather conditions. This 
 - H₀: No interaction between temperature and rainfall.
 - H₁: A significant interaction exists.
 
-### Location-Based Preferences
-- H₀: No variation in preference by location.
-- H₁: Preference varies significantly by location.
-
 ### Time-of-Day Influence
 - H₀: Time of day has no impact.
 - H₁: Time of day significantly influences sales/preference.
+  
+  ### Temperature-Beverage Preference
+- H₀: No interaction between temperature and rainfall.
+- H₁: A significant interaction exists.
+
 
 ---
 
