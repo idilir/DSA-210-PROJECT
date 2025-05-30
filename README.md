@@ -23,6 +23,22 @@ Coffee shops often experience fluctuating sales due to weather conditions. This 
 
 ---
 
+## 🧪 Data Enrichment  
+To understand the impact of environmental conditions on beverage sales, both datasets were **merged** based on the `date` field. Additional engineered features were created for deeper analysis:
+
+- `avg_temp_c`: Daily average temperature (from weather data)  
+- `rain_mm`: Daily total rainfall  
+- `hour`: Extracted from transaction timestamps to analyze time-of-day effects  
+- `day_of_week`, `month`: Temporal features derived from date  
+- `transaction_qty`: Total number of items purchased per transaction  
+- `unit_price`: Derived by dividing sales amount by quantity  
+- `is_rainy`: Boolean feature indicating whether rainfall occurred  
+- `beverage_type`: Binary label for machine learning (1 = Coffee, 0 = Tea)
+
+This enrichment enabled correlation analysis, feature selection, and predictive modeling.
+
+---
+
 ## 🎯 Objectives
 - Analyze correlations between weather (temperature, rainfall) and coffee sales.
 - Identify patterns in coffee vs. tea preferences based on weather.
@@ -114,126 +130,66 @@ Coffee shops often experience fluctuating sales due to weather conditions. This 
 **Insight**: High rainfall doesn’t skew sales much—stable demand across weather.
 
 ---
-Predicting Unit Price Using Machine Learning
-Models & Results:
-Model
-R² Score
-RMSE
-MAE
-CV R² Mean
-Linear Regression
-0.03
-0.972
-0.632
-—
-Random Forest
-0.70
-0.545
-0.419
-0.70
+---
 
-Visualization:
-The scatter plot compares actual vs. predicted unit prices using the Random Forest model.
-The red dashed line represents perfect predictions.
-Most predictions fall close to the line, showing strong predictive power.
-Takeaways:
-Random Forest performed significantly better than Linear Regression.
-The model achieved 70% of the variance explained (R² = 0.70), indicating a good fit.
-This suggests unit price is partially predictable using features like product category, weather, and timing.
-Further improvement may be possible by adding marketing or inventory features.
+## 🤖 Machine Learning: Predicting Unit Price
 
+| Model             | R² Score | RMSE  | MAE   | CV R² Mean |
+|------------------|----------|-------|-------|-------------|
+| Linear Regression | 0.03     | 0.972 | 0.632 | —           |
+| Random Forest     | 0.70     | 0.545 | 0.419 | 0.70        |
 
-
-
-
-
-
-
-
-Machine Learning Results: Coffee vs Tea Prediction
- Model: Random Forest Classifier
-Target: Classify transactions as Coffee (1) or Tea (0)
- Performance Metrics:
-Metric
-Tea (0)
-Coffee (1)
-Precision
-0.44
-0.56
-Recall
-0.19
-0.81
-F1-Score
-0.27
-0.66
-Accuracy
-
-
-0.54
-
-
-
-
-
-
-
-
-
-The model correctly identifies Coffee purchases 81% of the time, but struggles with Tea (19% recall).
-Overall accuracy is 54%, better than random guessing for unbalanced classes.
-Precision for Coffee is higher, suggesting more confident classification in that category.
- Confusion Matrix Insight:
-The model tends to overpredict Coffee, misclassifying many actual Tea purchases as Coffee.
-Class imbalance may be affecting performance. Techniques like SMOTE or class weighting can improve this.
-Top Features Influencing Prediction:
-Rank
-Feature
-Description
-1
-hour
-Time of transaction (strongest signal)
-2
-total_sales
-Quantity × price per transaction
-3
-avg_temp_c
-Temperature (°C)
-4
-transaction_qty
-Number of items bought
-5
-unit_price
-Price per item
-6
-rain_mm
-Rainfall amount
-7
-month, day_of_week
-Seasonality & weekday effects
-
-Observation: Coffee is heavily consumed in the morning and during cooler days. Tea shows a more subtle pattern, often consumed in the afternoon or rainy days — harder for the model to detect.
-
-CONCLUSION
-This project aimed to examine whether environmental conditions—specifically weather (temperature and rainfall) and time of day—have a measurable influence on beverage sales patterns. Through extensive exploratory data analysis and machine learning experimentation, we arrived at several meaningful insights:
-Cold weather strongly correlates with increased coffee sales, especially during morning hours. This supports the idea that consumers gravitate toward hot beverages like coffee to start their day in colder climates.
-Tea sales tend to show a moderate increase during rainy and warmer afternoons, though this trend is not as strong or consistent as coffee in the morning. The relationship between rain and tea consumption appears to be more behavioral than causal.
-Time of day emerged as a more significant driver of beverage choice than weather alone. Morning hours consistently saw the highest volume of coffee sales, regardless of weather conditions.
-Weather does exert some influence, particularly in terms of temperature-driven demand for coffee. However, it is not a dominant factor in determining unit prices or exact sales quantities. Other factors such as marketing campaigns, customer demographics, or seasonal promotions may play a more important role.
-Machine learning models, particularly regression algorithms, struggled to predict unit prices based on weather and time variables alone. Their performance (as reflected in R² scores close to zero) suggests that weather is not a sufficient predictor for pricing models.
-Classification models fared slightly better when predicting product categories (coffee vs tea) but were still limited by class imbalance and weak feature predictability.
-Business Implications:
-Companies can benefit from aligning inventory and staffing with predictable time-of-day patterns (e.g., stocking more coffee for morning shifts).
-Weather forecasts may help anticipate minor fluctuations in demand, particularly for tea on rainy afternoons or coffee during cold mornings.
-However, for accurate forecasting and pricing, more granular data inputs—such as customer-level data, event schedules, or marketing activity—are likely required.
-
-
-
-
-## ✅ Conclusion
-- ❄️ Cold weather clearly drives up coffee sales.
-- ☔ Rain doesn't drastically affect pricing but nudges demand slightly.
-- 📍 Location and time of day are strong predictors of sales volume.
-- 📅 Weekly trends and weather together offer actionable insights for inventory planning.
+**Takeaways**:
+- Random Forest performed significantly better  
+- Weather and timing explain ~70% of price variance  
+- More features (e.g., marketing, inventory) may improve accuracy
 
 ---
 
+## 🤖 Machine Learning: Coffee vs Tea Classification
+
+**Model**: Random Forest Classifier  
+**Target**: Classify purchases as Coffee (1) or Tea (0)  
+
+| Metric     | Tea (0) | Coffee (1) |
+|------------|---------|------------|
+| Precision  | 0.44    | 0.56       |
+| Recall     | 0.19    | 0.81       |
+| F1-Score   | 0.27    | 0.66       |
+
+**Accuracy**: 54%
+
+**Insights**:
+- Coffee is detected with high recall  
+- Model overpredicts coffee  
+- Class imbalance affects performance  
+- Consider SMOTE or class weighting  
+
+**Top Features**:
+1. `hour` – time of transaction  
+2. `total_sales` – total amount spent  
+3. `avg_temp_c` – temperature  
+4. `transaction_qty` – item count  
+5. `unit_price` – price per unit  
+6. `rain_mm` – rainfall  
+7. `month`, `day_of_week` – seasonal effects  
+
+---
+
+## 📌 Conclusion
+
+This project analyzed how weather (temperature and rainfall) and time of day affect beverage sales. Key insights include:
+
+- Cold mornings increase coffee sales  
+- Tea consumption slightly rises on rainy afternoons  
+- Time of day is a stronger predictor than weather  
+- Weather does influence demand but not pricing significantly  
+- Regression models struggle to predict unit price from weather  
+- Classification models perform moderately well with class imbalance
+
+**Business Implications**:
+- Adjust inventory and staff for busy morning shifts  
+- Use weather forecasts for minor demand shifts  
+- For precise forecasting, integrate customer behavior and marketing data
+
+---
