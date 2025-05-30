@@ -138,6 +138,9 @@ This enrichment enabled correlation analysis, feature selection, and predictive 
 |------------------|----------|-------|-------|-------------|
 | Linear Regression | 0.03     | 0.972 | 0.632 | —           |
 | Random Forest     | 0.70     | 0.545 | 0.419 | 0.70        |
+<img width="841" alt="Screenshot 2025-05-30 at 10 06 06" src="https://github.com/user-attachments/assets/0993bb9e-9c19-49a0-a148-61ebb7e3b555" />
+<img width="841" alt="Screenshot 2025-05-30 at 10 06 14" src="https://github.com/user-attachments/assets/4ec2f476-2572-45b3-8ea9-5574db27c895" />
+
 
 **Takeaways**:
 - Random Forest performed significantly better  
@@ -158,6 +161,8 @@ This enrichment enabled correlation analysis, feature selection, and predictive 
 | F1-Score   | 0.27    | 0.66       |
 
 **Accuracy**: 54%
+<img width="619" alt="Screenshot 2025-05-30 at 10 21 11" src="https://github.com/user-attachments/assets/9c416f45-bb13-4fa7-b7bb-5a29682b139b" />
+<img width="987" alt="Screenshot 2025-05-30 at 10 21 31" src="https://github.com/user-attachments/assets/e5ec4755-796e-4035-ac7b-39704e5f418d" />
 
 **Insights**:
 - Coffee is detected with high recall  
