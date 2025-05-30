@@ -138,8 +138,8 @@ This enrichment enabled correlation analysis, feature selection, and predictive 
 |------------------|----------|-------|-------|-------------|
 | Linear Regression | 0.03     | 0.972 | 0.632 | —           |
 | Random Forest     | 0.70     | 0.545 | 0.419 | 0.70        |
-<img width="841" alt="Screenshot 2025-05-30 at 10 06 06" src="https://github.com/user-attachments/assets/0993bb9e-9c19-49a0-a148-61ebb7e3b555" />
-<img width="841" alt="Screenshot 2025-05-30 at 10 06 14" src="https://github.com/user-attachments/assets/4ec2f476-2572-45b3-8ea9-5574db27c895" />
+<img width="793" alt="Screenshot 2025-05-30 at 12 02 08" src="https://github.com/user-attachments/assets/fada3dc0-1112-442e-9e73-c89af758696a" />
+<img width="793" alt="Screenshot 2025-05-30 at 12 01 54" src="https://github.com/user-attachments/assets/bccaf3c7-91f6-4120-9193-f2989788b202" />
 
 
 **Takeaways**:
